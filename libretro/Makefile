@@ -49,7 +49,7 @@ ifneq (,$(findstring unix,$(platform)))
 	HAVE_PTHREADS = 1
 	
 	# Tinker Board
-else ifneq (,$(findstring tinker,$(platform)))
+else ifneq (,$(findstring tinkerboard,$(platform)))
     MFLAGS += -marm -mfloat-abi=hard -march=armv7-a -mtune=cortex-a17 -mfpu=neon-vfpv4 -mfloat-abi=hard
     ASFLAGS += -marm -mfloat-abi=hard -march=armv7-a -mtune=cortex-a17 -mfpu=neon-vfpv4 -mfloat-abi=hard
     CFLAGS += -D GL_GLEXT_PROTOTYPES -D TARGET_BEAGLE -D TARGET_LINUX_ARMELv7 -DARM_HARDFP -fsingle-precision-constant -funsafe-math-optimizations
