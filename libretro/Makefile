@@ -65,8 +65,8 @@ else ifneq (,$(findstring tinkerboard,$(platform)))
 	PLATFORM_EXT := unix
 	WITH_DYNAREC=arm
 	HAVE_GENERIC_JIT = 0 
-	USE_GLES := 1 
-	USE_SDL := 1
+	USE_GLES = 1 
+	USE_SDL = 1
 	
 
 else ifneq (,$(findstring linux-portable,$(platform)))
